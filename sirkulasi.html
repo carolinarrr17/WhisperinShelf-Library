@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Sirkulasi Perpustakaan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fb;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: rgb(212, 106, 121);
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 0 auto 20px auto;
+      padding: 10px 20px;
+      background-color: #b4f6c9;
+      color: rgb(212, 106, 121);
+      text-decoration: none;
+      border-radius: 50px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .form-section {
+      margin-bottom: 40px;
+      background-color: #b4f6c9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+    }
+
+    .form-section h2 {
+      color: rgb(212, 106, 121);
+      margin-top: 0;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      align-self: flex-start;
+      margin-bottom: 6px;
+      font-weight: bold;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    input, select {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #ff9ec0;
+      color: rgb(212, 106, 121);
+      border: none;
+      padding: 10px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #f48fb1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="layanan.html" class="back-button">← Kembali ke Beranda</a>
+    <h1>Layanan Sirkulasi Perpustakaan</h1>
+
+    <!-- Form Peminjaman Buku -->
+    <div class="form-section">
+      <h2>Peminjaman Buku</h2>
+      <form>
+        <label for="namaPeminjam">Nama Peminjam:</label>
+        <input type="text" id="namaPeminjam" name="namaPeminjam" required>
+
+        <label for="idBukuPinjam">Nama Buku:</label>
+        <input type="text" id="idBukuPinjam" name="idBukuPinjam" required>
+
+        <label for="tanggalPinjam">Tanggal Peminjaman:</label>
+        <input type="date" id="tanggalPinjam" name="tanggalPinjam" required>
+
+        <button type="submit">Pinjam Buku</button>
+      </form>
+    </div>
+
+    <!-- Form Pengembalian Buku -->
+    <div class="form-section">
+      <h2>Pengembalian Buku</h2>
+      <form>
+        <label for="namaPengembali">Nama Pengembali:</label>
+        <input type="text" id="namaPengembali" name="namaPengembali" required>
+
+        <label for="idBukuKembali">Nama Buku:</label>
+        <input type="text" id="idBukuKembali" name="idBukuKembali" required>
+
+        <label for="tanggalKembali">Tanggal Pengembalian:</label>
+        <input type="date" id="tanggalKembali" name="tanggalKembali" required>
+
+        <button type="submit">Kembalikan Buku</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 WhisperinShelf Library
+  </footer>
+</body>
+</html>

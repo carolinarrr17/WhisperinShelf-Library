@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff9ec0;
+      color: rgb(212, 106, 121);
+      padding: 10px 5px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    @font-face {
+      font-family: 'Rusillaserif-Regular';
+      src: url('fonts/Rusillaserif-Regular.ttf') format('truetype');
+    }
+
+    h1 {
+      font-family: 'Rusillaserif-Regular', serif;
+      font-size: 48px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #b4f6c9;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: rgb(212, 106, 121);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    .search-bar input[type="search"] {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .search-bar button {
+      padding: 6px 12px;
+      background-color: rgb(212, 106, 121);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #ecf0f1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .hero p {
+      font-style: italic;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .feature {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #2980b9;
+    }
+
+    /* ==== Bagian Rekomendasi Buku ==== */
+    .book-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .book-section h2 {
+      font-size: 32px;
+      color:  rgb(212, 106, 121);
+      margin-bottom: 10px;
+    }
+
+    .top-links {
+      margin-bottom: 20px;
+    }
+
+    .top-links a {
+      color: #D162A4;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px 40px 20px;
+    }
+
+    .book {
+      background-color:  rgb(212, 106, 121);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 160px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .book-title {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #ff9ec0;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer h2, footer p {
+      text-align: left;
+      margin: 10px auto;
+      max-width: 800px;
+    }
+
+    a{ 
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Logo .png" width="200px" alt="Logo Perpustakaan">
+  <h1>WHISPERINSHELF</h1>
+</header>
+
+<nav>
+  <a href="profil.html">Profil</a>
+  <a href="OPAC.html">OPAC</a>
+  <a href="layanan.html">Layanan</a>
+  <a href="koleksi.html">Koleksi</a>
+  <a href="Agenda.html">Agenda</a>
+  <a href="PANDUAN AWAL.html">Panduan</a>
+  <a href="berita.html">Berita</a>
+  <form action="search.html" method="get" class="search-bar">
+    <input type="search" name="q" placeholder="Cari buku">
+    <button type="submit">Cari</button>
+  </form>
+</nav>
+
+<section class="hero">
+  <h2>Selamat Datang di WhisperinShelf Library</h2>
+  <p>Bukan sekadar koleksi, melainkan rak-rak senyap yang bersuara dalam sunyi—membawamu menjelajah ilmu kapan saja, di mana pun hasrat belajar itu tumbuh.</p>
+</section>
+
+<section class="book-section">
+  <h2>Rekomendasi Buku</h2>
+  <div class="book-list">
+    <div class="book">
+      <img src="laut.jpg" alt="Laut Bercerita">
+      <div class="book-title">LAUT BERCERITA</div>
+      <p>by Leila S. Chudori<br>★★★★★</p>
+    </div>
+    <div class="book">
+      <img src="cantik.jpg" alt="Cantik Itu Luka">
+      <div class="book-title">CANTIK ITU LUKA</div>
+      <p>by Eka Kurniawan<br>★★★★★</p>
+    </div>
+    <div class="book">
+      <img src="pulang.jpg" alt="Pulang">
+      <div class="book-title">PULANG</div>
+      <p>by Leila S. Chudori<br>★★★★</p>
+    </div>
+    <div class="book">
+      <img src="jsp.jpg" alt="Jakarta Sebelum Pagi">
+      <div class="book-title">JAKARTA SEBELUM PAGI</div>
+      <p>by Ziggy Zezsyazeoviennazabrizkie<br>★★★★</p>
+    </div>
+    <div class="book">
+      <img src="entrok.jpg" alt="Entrok">
+      <div class="book-title">ENTROK</div>
+      <p>by Okky Madasari<br>★★★★★</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2>Kontak Kami</h2>
+  <p>Alamat : Jl. Prof. Soedarto</p>
+  <p>Nomor Telepon : (021) 0536 165</p>
+  <p>Email : administrasi@whisperinshelflib.go.id</p>
+  <p>Formulir Kontak :<a href="https://forms.gle/NDFVGjZQQ4VPzj1TA"> Klik Disini</a></p>
+  <p>Peta Lokasi : <a href="https://maps.app.goo.gl/4Ays7aasufa28bE8A">Klik Disini</a></p>
+  &copy; 2025 WhisperinShelf Library
+</footer>
+
+</body>
+</html>

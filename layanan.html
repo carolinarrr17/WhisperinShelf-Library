@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layanan Perpustakaan Digital</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fb;
+    }
+
+    header {
+      background-color: #ff9ec0;
+      color: rgb(212, 106, 121);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .bubble {
+      background-color: #b4f6c9;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .bubble:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .bubble img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .bubble {
+        width: 140px;
+        height: 140px;
+      }
+
+      .bubble img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #b4f6c9;
+      color: rgb(212, 106, 121);
+      text-decoration: none;
+      border-radius: 50px;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ff9ec0;
+      color: rgb(212, 106, 121);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Layanan Digital</h1>
+  <p>WHISPERINSHELF LIBRARY</p>
+</header>
+
+<main>
+  <a href="display new.html" class="back-button">← Kembali ke Beranda</a>
+
+  <div class="container">
+
+    <a href="audio dongeng.html" class="bubble">
+      <img src="https://cdn-icons-png.flaticon.com/512/727/727269.png" alt="Audio Book">
+      <span>Audio Book</span>
+    </a>
+
+    <a href="sirkulasi.html" class="bubble">
+      <img src="sirkulasi.png" alt="Jurnal Digital">
+      <span>Sirkulasi</span>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 WhisperinShelf Library
+</footer>
+
+</body>
+</html>
